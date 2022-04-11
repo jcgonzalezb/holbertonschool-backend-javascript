@@ -1,4 +1,3 @@
-#!/usr/bin/node
 // Modify function to instantiate variables using const and let.
 
 export function taskFirst() {
