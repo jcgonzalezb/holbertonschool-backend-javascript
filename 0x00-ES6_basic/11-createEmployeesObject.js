@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default function createEmployeesObject(departmentName, employees) {
   const val = [];
   for (const i of employees) {
