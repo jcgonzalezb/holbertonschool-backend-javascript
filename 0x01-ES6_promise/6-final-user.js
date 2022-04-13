@@ -13,5 +13,5 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
     value: error.toString(),
   }));
 
-  return [signedUser, uploadedPhoto];
+  return Promise.resolve[signedUser, uploadedPhoto];
 }
