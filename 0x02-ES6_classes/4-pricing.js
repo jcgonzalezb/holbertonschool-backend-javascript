@@ -1,27 +1,38 @@
 /* eslint-disable */
-export default class Currency {
-  constructor(code, name) {
-    this._code = code;
-    this._name = name;
+import Currency from './3-currency.js';
+
+
+export default class Pricing {
+  constructor(amount, currency) {
+    this._amount = amount;
+    this._currency = currency;
   }
 
-  get code() {
-    return this._code;
+  get amount() {
+    return this._amount;
   }
 
-  set code(code) {
-    this._code = code;
+  set amount(amount) {
+    this._amount = amount;
   }
 
-  get name() {
-    return this._name;
+  get currency() {
+    return this._currency;
   }
 
-  set name(name) {
-    this._name = name;
+  set currency(currency) {
+    if (!(currency instanceof Currency)) {
+      throw TypeError('Currency must be a type of Currency');
+    }
+    this._currency = currency;
   }
 
-  displayFullCurrency() {
-    return this.name + " " + '(' + this.code + ')';
+  displayFullPrice() {
+    return `${this._amount} ${this._currency.displayFullCurrency()}`;
   }
+
+  static convertPrice(amount, conversionRate) {
+    return (amount * conversionRate);
+  }
+
 }
