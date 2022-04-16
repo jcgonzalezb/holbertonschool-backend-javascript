@@ -1,10 +1,6 @@
 # JavaScript - ES6 Basics
 
-## Description of the files and folder inside this folder:
-
-- main_files: Folder with main programs to showcase sample function usage.
-
-
+## Description of the files inside this folder:
 
 0. Modify function taskFirst to instantiate variables using const and function taskNext to instantiate variables using let.
 1. Modify the variables inside the function taskBlock so that the variables aren’t overwritten inside the conditional block.
