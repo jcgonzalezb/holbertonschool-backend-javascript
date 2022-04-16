@@ -1,6 +1,6 @@
 # JavaScript - ES6 Basics
 
-## Description of the files and folders inside this folder:
+## Description of the files and folder inside this folder:
 
 - main_files: Folder with main programs to showcase sample function usage.
 
