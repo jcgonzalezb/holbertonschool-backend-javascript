@@ -16,10 +16,19 @@
 11. Write a function named createEmployeesObject that will receive two arguments.
 12. Write a function named createReportObject whose parameter, employeesList, is the return value of the previous function createEmployeesObject.
 
+## Configuration files:
+
+- .eslintrc.js
+- babel.config.js
+- package-lock.json
+- package.json
+
+
+
 ## Languages and Tools:
 
 - OS: Ubuntu 20.04 LTS
-- Language: Javascript (ES6).
+- Language: Javascript (ES6), Node v14.
 - Style guidelines: [Javascript Standard](https://standardjs.com/rules.html) || [ESLint](https://eslint.org/)
 
 <p align="left"> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> </p>
