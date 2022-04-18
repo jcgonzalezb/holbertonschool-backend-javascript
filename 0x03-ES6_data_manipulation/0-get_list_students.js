@@ -1,6 +1,6 @@
 /* eslint-disable */
-export default function getListStudents(id, firstName, location) {
-  const array =  [
+export default function getListStudents() {
+  const array_new =  [
     {
       'id': '1',
       'firstName': 'Guillaume',
@@ -17,4 +17,5 @@ export default function getListStudents(id, firstName, location) {
       'location': 'San Francisco'
     }
   ];
+  return array_new;
 }
