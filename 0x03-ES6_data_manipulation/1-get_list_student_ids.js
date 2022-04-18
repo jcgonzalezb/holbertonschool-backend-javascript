@@ -1,21 +1,5 @@
 /* eslint-disable */
-export default function getListStudentIds() {
-  const array_new = [
-    {
-      'id': '1',
-      'firstName': 'Guillaume',
-      'location': 'San Francisco'
-    },
-    {
-      'id': '2',
-      'firstName': 'James',
-      'location': 'Columbia'
-    },
-    {
-      'id': '3',
-      'firstName': 'Serena',
-      'location': 'San Francisco'
-    }
-  ];
-  return array_new;
+export default function getListStudentIds(students) {
+  if (students instanceof Array) return students.map((student) => student.id);
+  return [];
 }
