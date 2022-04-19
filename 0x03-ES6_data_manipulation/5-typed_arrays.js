@@ -1,8 +1,8 @@
 /* eslint-disable */
 export default function getStudentIdsSum(length, position, value) {
   let buffer = new ArrayBuffer(length);
-  let int8View = new Int8Array(buffer);
-  int8View[position] = value;
+  let Uint8View = new Uint8Array(buffer);
+  Uint8View[position] = value;
 
-  return int8View;
+  return Uint8View;
 }
