@@ -4,8 +4,10 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
 
   const newStudents = studentsByCity.map((student) => {
     for (const newGrade of newGrades) {
+      if (newGrade.studentId === student.id) {
       student.grade = newGrade.grade;
       return student;
+      }
     }
 
     student.grade = 'N/A';
