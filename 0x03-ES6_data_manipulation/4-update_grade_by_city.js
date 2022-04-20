@@ -1,15 +1,15 @@
 /* eslint-disable */
-export default function updateStudentGradeByCity(getListStudents, city, newGrades) {
-  if (getListStudents instanceof Array) {
-    let studentsbycity = [];
-    studentsbycity = getListStudents.filter(getListStudent => getListStudent.location === city);
-  }
+export default function updateStudentGradeByCity(students, city, newGrades) {
+  const studentsByCity = students.filter(student => student.location === city);
 
+  const newStudents = studentsByCity.map((student) => {
+    for (const newGrade of newGrades) {
+      student.grade = newGrade.grade;
+      return student;
+    }
 
-let studentGrades = studentsbycity.map(student => {
-  let newList = {
-    "id": studentsbycity.Id,
-    "firstName": studentsbycity.firstName,
-    "location": studentsbycity.location,
-    "grade": newGrades.grade,
-  };
+    student.grade = 'N/A';
+    return student;
+  });
+  return newStudents;
+}
