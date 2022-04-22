@@ -90,7 +90,7 @@ Requirements:
 - The main file and the ambient file should both import the types defined in the interface file.
 - You can easily test your ambient file by looking at the intellisense of your IDE when using the 3rd party functions.
 
-8. task_4. In task_4/js/subjects:
+9. task_4. In task_4/js/subjects:
 
 Create a file Teacher.ts and write a Teacher interface in a namespace named Subjects.
 - the interface requires firstName and lastName as string
