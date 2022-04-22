@@ -21,6 +21,7 @@ Pasta, 1
 Rice, 1
 Banana, 5
 ```
+10. A function that returns an updated map for all items with initial quantity at 1. It accepts a map as an argument. The map that accepts for argument is similar to the map you create in the previous task. For each entry of the map where the quantity is 1, update the quantity to 100. If updating the quantity is not possible (argument is not a map) the error 'Cannot process should be thrown'.
 
 
 ## Configuration files:
