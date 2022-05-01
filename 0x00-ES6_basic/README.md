@@ -15,6 +15,7 @@
 10. Rewrite the function appendToEachArrayValue to use ES6’s for...of operator.
 11. Write a function named createEmployeesObject that will receive two arguments.
 12. Write a function named createReportObject whose parameter, employeesList, is the return value of the previous function createEmployeesObject.
+100. Write a function named createIteratorObject, that will take into argument a report Object created with the previous function createReportObject. This function will return an iterator to go through every employee in every department.
 
 ## Configuration files:
 
