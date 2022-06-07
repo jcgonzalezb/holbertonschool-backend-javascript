@@ -1,10 +1,9 @@
 const express = require('express');
 const students = require('./3-read_file_async');
+
 const app = express();
 const port = 1245;
-const host = '127.0.0.1';
-
-
+const hostname = '127.0.0.1';
 
 app.get('/', (req, res) => {
   res.statusCode = 200;
