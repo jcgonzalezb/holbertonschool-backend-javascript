@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-async function countStudents (path) {
+async function readDatabase (path) {
   let data;
   try {
     data = await fs.promises.readFile(path, 'utf8');
@@ -28,4 +28,4 @@ async function countStudents (path) {
   return studentsByField;
 }
 
-module.exports = countStudents;
+module.exports = readDatabase;
