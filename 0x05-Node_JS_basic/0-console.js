@@ -1,3 +1,4 @@
+/* eslint-disable */
 function displayMessage (str) {
   console.log(str);
 }
